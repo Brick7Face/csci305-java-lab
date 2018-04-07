@@ -1,0 +1,69 @@
+1. To implement LastPlayBot, I added one field and one method to the Player class - an Element 
+   representing the opponent's last play and a setter method for that variable, called setLast().
+   In the Main class when running the program, I called the setter method to set the last play
+   after every move: 
+   player1.setLast(play2) //set the opponent's last move field for player 1 to player 2's last move
+   player2.setLast(play1) //set the opponent's last move field for player 2 to player 1's last move
+   
+   This allowed me to use proper Java encapsulation and elements of this extended into MyBot. The
+   play() method in LastPlayBot simply returned the inherited field oppLastPlay, for the opponent's
+   last play.
+   
+2. The strategy I used for MyBot was an extension of a known strategy of Rock, Paper Scissors: if
+   you win, you switch to the move that beats your last move; if you lose or tie, you switch to the
+   move that would beat your opponent's last move (evidently this has been proven statistically to 
+   be a good strategy). So, my code does this but randomly picks between the "opposite" moves
+   available; since every move in Rock, Paper, Scissors, Lizard, Spock has two moves that beats
+   it, I had to pick one. I had to add a field to player that keeps track of whether the last 
+   hand won or not, and a method to update this value. Then, in Main, I updated the win value
+   after every round's winner was determined. In the MyBot class, I added a helper method to
+   find the opposite of a play, which was either the Bot's last play if it had one or the 
+   opponent's last play if it tied or lost.
+   
+3.
+
+4. When I pit two of the same bots against each other, they always tie save for the RandomBot,
+   which makes sense since they all have the same initial conditions. I can generally beat the
+   bots since I know their strategies and what they will start on, though I mess up occasionally
+   since I am still getting the hang of the game. RandomBot is the most difficult to consistently
+   beat. The bots with simple strategies of course exhibit expected trends, i.e. they play how 
+   they are supposed to. When guessing randomly at plays, I often tie with the bots, or the game 
+   is close. When I employ the strategy I used for MyBot against RandomBot, I lose fairly
+   frequently, so perhaps it is not such a winning strategy after all. Against the other bots, 
+   StupidBot actually doesn't always do very badly. 
+
+5. As stated by the article, against a truly random opponent, there isn't a strategy that can give
+   one an advantage. However, algorithms have been designed to beat human players, since human
+   players are non-random and often employ certain strategies. Therefore, the answer sort of
+   depends on the opponent. Since the game is a simultaneous, zero-sum game, the player lacks
+   complete information about the outcome of the game. Since each move has two moves it beats and
+   two moves that defeat it, there is not a dominated strategy to win; all moves have a similar
+   payoff. Designing a strategy more likely to win is impossible against a truly random opponent,
+   but against a human would conceivably be possible by analyzing their moves statistically, like
+   what the algorithms do.
+
+6. The biggest thing I like about Java is it's familiarity - it was my first language, so most of 
+   my personal paradigms come from Java. I like the object orientation and encapsulation practices.
+   I also like how many libraries are available; though Java does have a lot of boilerplate syntax,
+   it has libraries for a wide variety of functions, so it balances out a little. It is overall a
+   good way to learn about object orientation concepts.
+
+7. As I hinted at, I do not like the boilerplate syntax required of setting up a Java program. A lot
+   of things take almost twice as long to setup as they do in Python or Ruby. Sometimes, I will spend
+   a lot of time searching the Internet for a solution to a problem that turns out to be a small syntax
+   error with a useless compiler method. That is frustrating.
+
+8. I liked this lab - a big part was because the concepts were familiar, but I still felt like I learned
+   something about the language and about object orientation. However, I did not have to spend a vast 
+   amount of time learning the syntax like I did for the Ruby and ML labs. I liked finally getting to be
+   familiar with Rock, Paper, Scissors, Lizard, Spock as well. The only part that I did not like so much
+   was some of the ways the program was set up, such as using the Outcome class - at first, I really did
+   not understand what was going to go into that. However, I built it to the best of my understanding and
+   eventually figured out how to use it, so it wasn't a big deal.
+
+9. Probably a good 10-15 hours; less than the other labs for sure, but I still spent a decent amount of time
+   making sure things were how they should be and functioning correctly.
+
+10. Java was my first programming language and I have used it very often, both in classes, out of classes,
+    and in my undergraduate research. So, objectively I have 3 years of experience with it, though that can
+    vary. I feel very comfortable using Java for most applications, sans GUI projects.
