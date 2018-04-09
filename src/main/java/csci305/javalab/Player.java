@@ -7,6 +7,11 @@ import java.util.Scanner;
 
 import static csci305.javalab.Main.*;
 
+/*  CSCI 305 Lab 3 - Java Lab
+ *  Rock, Paper, Scissors, Lizard, Spock
+ *  Nate Tranel - njtranel@gmail.com
+ */
+
 //represents a player in rock, paper, scissors, lizard, spock
 //contains a name, a field for the opponent's last play, and 
 //whether or not the last hand was a win for the player
@@ -27,7 +32,7 @@ public abstract class Player {
         this.won = value;
     }
 
-    public void setLast(Element last) {				//updates opponent's last play (for encapsulation)
+    public void setLast(Element last) {			//updates opponent's last play (for encapsulation)
         this.oppLastPlay = last;
     }
 

@@ -1,6 +1,11 @@
 package csci305.javalab;
 
-//Rock is a specialized form of Element
+/*  CSCI 305 Lab 3 - Java Lab
+ *  Rock, Paper, Scissors, Lizard, Spock
+ *  Nate Tranel - njtranel@gmail.com
+ */
+
+//Rock is a specialized form of Element, represents Rock move
 public class Rock extends Element {
 
 	public Rock(String inName) {

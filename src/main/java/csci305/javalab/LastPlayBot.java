@@ -2,6 +2,11 @@ package csci305.javalab;
 
 import static csci305.javalab.Main.moves;
 
+/*  CSCI 305 Lab 3 - Java Lab
+ *  Rock, Paper, Scissors, Lizard, Spock
+ *  Nate Tranel - njtranel@gmail.com
+ */
+
 //represents a bot that repeats whatever its opponent played last hand
 public class LastPlayBot extends Player {
 

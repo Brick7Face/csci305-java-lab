@@ -1,6 +1,11 @@
 package csci305.javalab;
 
-//Spock is a specialized form of Element
+/*  CSCI 305 Lab 3 - Java Lab
+ *  Rock, Paper, Scissors, Lizard, Spock
+ *  Nate Tranel - njtranel@gmail.com
+ */
+
+//Spock is a specialized form of Element, represents Spock move
 public class Spock extends Element {
 
 	public Spock(String inName) {

@@ -2,6 +2,11 @@ package csci305.javalab;
 
 import static csci305.javalab.Main.moves;
 
+/*  CSCI 305 Lab 3 - Java Lab
+ *  Rock, Paper, Scissors, Lizard, Spock
+ *  Nate Tranel - njtranel@gmail.com
+ */
+
 //represents a bot that starts at one move and iterates through the list of moves
 public class IterativeBot extends Player {
     private Element lastMove;								//contains the value of it's last move (this may differ from the opponent's last move, naturally)

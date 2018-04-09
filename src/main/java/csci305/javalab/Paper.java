@@ -1,6 +1,11 @@
 package csci305.javalab;
 
-//Paper is a specialized form of Element
+/*  CSCI 305 Lab 3 - Java Lab
+ *  Rock, Paper, Scissors, Lizard, Spock
+ *  Nate Tranel - njtranel@gmail.com
+ */
+
+//Paper is a specialized form of Element, represents Paper move
 public class Paper extends Element {
 
 	public Paper(String inName) {

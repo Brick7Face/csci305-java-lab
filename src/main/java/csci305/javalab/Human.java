@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 import static csci305.javalab.Main.moves;
 
+/*  CSCI 305 Lab 3 - Java Lab
+ *  Rock, Paper, Scissors, Lizard, Spock
+ *  Nate Tranel - njtranel@gmail.com
+ */
+
 //represents a human player and prints a menu for the player to enter a choice through stdin
 public class Human extends Player {
 
@@ -21,11 +26,11 @@ public class Human extends Player {
         while (!goodInput) {																							//continue to loop while input is invalid
             try {
                 choice = in.nextInt();																	//grab next int in stdin
-                if (choice > 0 && choice < 6) {															//if the input is within the valid range, flag it as acceptable
+                if (choice > 0 && choice < 6) {														//if the input is within the valid range, flag it as acceptable
                     goodInput = true;
                 }
                 else {
-					System.out.print("Invalid move. Please try again.\nEnter your move: ");				//otherwise print error message and prompt for retry
+					System.out.print("Invalid move. Please try again.\nEnter your move: ");			//otherwise print error message and prompt for retry
 					in.next();																			//clear input buffer
 				}
             } catch (Exception e) {																		//if input is not an int, catch the exception, print an error, retry

@@ -4,6 +4,11 @@ import java.util.Random;
 
 import static csci305.javalab.Main.moves;
 
+/*  CSCI 305 Lab 3 - Java Lab
+ *  Rock, Paper, Scissors, Lizard, Spock
+ *  Nate Tranel - njtranel@gmail.com
+ */
+
 //employ rock-paper-scissors winning strategy for rock, paper, scissors, lizard, spock
 public class MyBot extends Player {
     private Element lastPlay;							//tracks local last play
@@ -29,7 +34,7 @@ public class MyBot extends Player {
 	//helper method to determine the opposite play of the one passed in
     private Element findOpposite(Element e) {
         Random r = new Random();										//initialize a Random instance
-        int choice = r.nextInt(1);										//let the pick of opposite be a random number between 0 and 1 (since there are two options for opposites)
+        int choice = r.nextInt(1);							    //let the pick of opposite be a random number between 0 and 1 (since there are two options for opposites)
         Element opposite = null;										//move to return at end
         switch (e.getName()) {											//pick between the moves that would be e based on randomly generated number
             case "Rock":

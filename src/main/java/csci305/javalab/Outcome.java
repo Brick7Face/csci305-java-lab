@@ -1,5 +1,10 @@
 package csci305.javalab;
 
+/*  CSCI 305 Lab 3 - Java Lab
+ *  Rock, Paper, Scissors, Lizard, Spock
+ *  Nate Tranel - njtranel@gmail.com
+ */
+
 //Outcome is small helper class which contains an outcome based on an evaluation,
 //and a value (win/lose/tie)
 public class Outcome {

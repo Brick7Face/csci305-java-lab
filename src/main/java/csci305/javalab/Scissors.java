@@ -1,6 +1,11 @@
 package csci305.javalab;
 
-//Scissors is a specialized form of Element
+/*  CSCI 305 Lab 3 - Java Lab
+ *  Rock, Paper, Scissors, Lizard, Spock
+ *  Nate Tranel - njtranel@gmail.com
+ */
+
+//Scissors is a specialized form of Element, represents Scissors movement
 public class Scissors extends Element {
 
 	public Scissors(String inName) {
