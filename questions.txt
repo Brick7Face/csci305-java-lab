@@ -20,7 +20,27 @@
    find the opposite of a play, which was either the Bot's last play if it had one or the 
    opponent's last play if it tied or lost.
    
-3.
+3. Java generally employs static typing for constants and expressions. Expression types are inferred 
+   from the corresponding operators and operands in the expression. Static binding happens at compile 
+   time, in order to assure types are accounted for and correctly used before the program is allowed 
+   to run. The only time Java uses dynamic binding is in the case of overridden methods; however, 
+   when this happens, type checking is still done at compilation - the binding just does not happen 
+   until runtime. That is, the type checking system will not allow a programmer to override a method
+   but use incorrect types. Also worthy of note is that overloaded methods are bound at compile time, 
+   while overridden methods are bound at runtime. This all being the case, it is apparent that Java 
+   uses strong typing and therefore guarantees type compatibility, though it could be argued that this
+   allows less flexibility. The strong typing does give the programmer a structure to work with, though.
+   Java has four kinds of types: primitive types, such as int, short, long, byte, char, float,
+   double, and boolean; null types, corresponding to the value null; array types; and class types,
+   which are types of objects. Class types are defined by the programmer, and are generally treated
+   the same as other objects in the language. However, classes allow having subclasses, which inherit
+   from the parent class and contain a superset of functions, since the parent functionality is also
+   inherited. This allows subclasses to be more specific than parent classes, which is a hallmark of
+   Java's object-oriented language design. This polymorphism requires Java to have type information
+   available at runtime, however, and therefore to allow explicit runtime type checking. So, though
+   Java is generally referred to as a statically typed language, it is not without some dynamic typing.
+   ---Extra sources: https://beginnersbook.com/2013/04/java-static-dynamic-binding/
+   https://docs.google.com/viewer?url=http%3A%2F%2Fwww.ccs.neu.edu%2Fhome%2Friccardo%2Fcourses%2Fcsu370-fa07%2Flect4.pdf&pdf=true
 
 4. When I pit two of the same bots against each other, they always tie save for the RandomBot,
    which makes sense since they all have the same initial conditions. I can generally beat the
@@ -61,7 +81,7 @@
    not understand what was going to go into that. However, I built it to the best of my understanding and
    eventually figured out how to use it, so it wasn't a big deal.
 
-9. Probably a good 10-15 hours; less than the other labs for sure, but I still spent a decent amount of time
+9. Probably a good 10ish hours; less than the other labs for sure, but I still spent a decent amount of time
    making sure things were how they should be and functioning correctly.
 
 10. Java was my first programming language and I have used it very often, both in classes, out of classes,
